@@ -33,18 +33,15 @@
                     <FrameLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-
-
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:gravity="center"
                             android:layout_margin="30dp"
+                            android:textSize="18sp"
                             android:text="Hello Nelly "/>
                     </FrameLayout>
-
 
                     <FrameLayout
                         android:layout_width="100dp"
@@ -52,11 +49,12 @@
                         android:layout_weight="1">
                         <ImageView
                             android:id="@+id/profile_image"
-                            android:layout_width="60dp"
+                            android:layout_width="80dp"
                             android:layout_height="match_parent"
                             android:padding="5dp"
                             android:layout_gravity="center|end"
-                            app:srcCompat="@drawable/ic_user" />
+                            app:srcCompat="@drawable/ic_user"
+                            tools:ignore="VectorDrawableCompat" />
 
                     </FrameLayout>
 
@@ -66,7 +64,233 @@
 
             </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
 
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:background="#FFFFFF"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+               android:background="#FFFFFF"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#000000"
+                    android:text="@string/start"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvBorrowedLoanStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_cation"
+                        android:textColor="#0b0b0b"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center|center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="0"
+                            android:src="@drawable/newww"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="12dp"
+                           android:text="@string/sign_up"
+                           android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:minHeight="0dp"
+                            android:paddingStart="1dp"
+                            android:paddingLeft="0dp"
+                            android:paddingBottom="2dp"
+                          android:text="@string/attraction_site"
+                            android:textAllCaps="false"
+                           android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center|center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="0"
+                            android:src="@mipmap/ic_launcher"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="@string/sign_up"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:minHeight="0dp"
+                            android:paddingStart="1dp"
+                            android:paddingLeft="0dp"
+                            android:paddingBottom="2dp"
+                            android:text="@string/lodges"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvGroups"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center|center_vertical"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_weight="0"
+                            android:src="@mipmap/ic_launcher"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="@string/sign_up"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            style="@style/Widget.MaterialComponents.Button.TextButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:minHeight="0dp"
+                            android:paddingStart="1dp"
+                            android:paddingLeft="0dp"
+                            android:paddingBottom="2dp"
+                            android:text="@string/car_bars"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

@@ -6,4 +6,9 @@
     <string name="phone">Phone</string>
     <string name="name">Name</string>
     <string name="email">Email</string>
+    <string name="start">Let\'s Start</string>
+    <string name="your_cation">Your Vocation</string>
+    <string name="attraction_site">Attaction Site</string>
+    <string name="lodges">Lodges</string>
+    <string name="car_bars">Cars/Bars</string>
 </resources>
