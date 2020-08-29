@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/etoursText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="180dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eTOURS"/>
+    <TextView
+        android:id="@+id/travelWithUsText"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel with us!"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/email1"
+       android:layout_margin="10dp"
+
+
+        android:backgroundTint="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:passwordToggleEnabled="true">
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_margin="10dp"
+
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:text="Remember"
+            android:buttonTint="@android:color/black"/>
+            <TextView
+                android:id="@+id/forgotPass"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Forgot Password"/>
+    </LinearLayout>
+    <Button
+    android:id="@+id/btnSignIn"
+    android:textColor="@android:color/black"
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SIGN IN"
+    android:background="@drawable/sign_up_button"
+    android:letterSpacing="0.3"/>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:background="@drawable/sign_up_button"
+        android:letterSpacing="0.3"/>
+</LinearLayout>
+       
+
+
